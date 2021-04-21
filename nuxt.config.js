@@ -136,9 +136,9 @@ export default {
       source: 'static/icon.png',
       filename: 'icon.png'
     },
-    manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
+    manifest: { name: process.env.npm_package_name || '', lang: process.env.lang },
     meta: {
-      name: SITE_INFO.sitename || process.env.npm_package_name || '',
+      name: process.env.npm_package_name || '',
       lang: process.env.lang,
       ogHost: process.env.URL,
       ogImage: '/preview.jpg'
